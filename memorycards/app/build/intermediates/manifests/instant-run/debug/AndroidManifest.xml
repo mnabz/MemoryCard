@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nautilius.memorycards"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="25" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uess-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        name="com.example.nautilius.memorycards.MyApp"
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity android:name="com.example.nautilius.memorycards.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.nautilius.memorycards.GestionCarte"
+            android:label="GESTION"
+            android:parentActivityName="com.example.nautilius.memorycards.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.nautilius.memorycards.ParamActivity"
+            android:label="Parametres"
+            android:parentActivityName="com.example.nautilius.memorycards.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.nautilius.memorycards.AfficherTable"
+            android:label="Learning"
+            android:parentActivityName="com.example.nautilius.memorycards.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.nautilius.memorycards.AjoutCartes"
+            android:parentActivityName="com.example.nautilius.memorycards.GestionCarte" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GestionCarte" />
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.example.nautilius.memorycards.DmServiceInsert"
+            android:exported="false" />
+
+        <receiver android:name="com.example.nautilius.memorycards.EndParsingReceiver" />
+        <receiver android:name="com.example.nautilius.memorycards.BroadCAstReceiverDemarrage" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.nautilius.memorycards.ListCarte" />
+        <activity android:name="com.example.nautilius.memorycards.LienActivity" />
+        <activity android:name="com.example.nautilius.memorycards.DownloadDataActivity" />
+        <activity android:name="com.example.nautilius.memorycards.AjouterJeu" />
+        <activity android:name="com.example.nautilius.memorycards.SuppJeu" />
+
+        <service
+            android:name="com.example.nautilius.memorycards.UpdateService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.nautilius.memorycards.ListCarteNonConsulte"
+            android:label="@string/title_activity_list_carte_non_consulte"
+            android:parentActivityName="com.example.nautilius.memorycards.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <service
+            android:name="com.example.nautilius.memorycards.ServiceRappelRevision"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.example.nautilius.memorycards.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+    </application>
+
+</manifest>

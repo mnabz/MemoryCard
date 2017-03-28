@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/res/merged/debug/layout-land/activity_param.xml",
+        "source": "/home/nabil/Bureau/projetandroid/memorycards/app/src/main/res/layout-land/activity_param.xml"
+    },
+    {
+        "merged": "/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/res/merged/debug/layout-land/fragment_question_dialog.xml",
+        "source": "/home/nabil/Bureau/projetandroid/memorycards/app/src/main/res/layout-land/fragment_question_dialog.xml"
+    },
+    {
+        "merged": "/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/res/merged/debug/layout-land/fragment_lien_response.xml",
+        "source": "/home/nabil/Bureau/projetandroid/memorycards/app/src/main/res/layout-land/fragment_lien_response.xml"
+    }
+]

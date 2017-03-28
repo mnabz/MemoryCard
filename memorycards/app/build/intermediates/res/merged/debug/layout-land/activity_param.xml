@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_param"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@color/fondecran"
+
+    tools:context="com.example.nautilius.memorycards.ParamActivity"
+    android:weightSum="1">
+    <include
+        layout="@layout/toolbar_main"/>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:text="Duration"
+                android:textSize="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/difficulteparam"
+                android:layout_weight="0.50" />
+            <EditText
+                android:background="#ffffff"
+                android:text="0"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/valeurtimerpram"
+                android:layout_weight="0.50" />
+            
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:text="Frequence Rappel"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50" />
+        <EditText
+            android:background="#ffffff"
+            android:text="0"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rappelparam"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:background="@color/fondecran"
+        android:layout_weight="0.76">
+
+
+        <Button
+            android:text="Valider changement"
+            android:id="@+id/bouttonparam"
+            android:width="3000dp"
+            android:textSize="15sp"
+
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_touch_app_white_18dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

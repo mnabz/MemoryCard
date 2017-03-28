@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nautilius.memorycards">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uess-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:name=".MyApp">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GestionCarte"
+            android:label="GESTION"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ParamActivity"
+            android:label="Parametres"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AfficherTable"
+            android:label="Learning"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AjoutCartes"
+            android:parentActivityName=".GestionCarte">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GestionCarte" />
+        </activity>
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".DmServiceInsert"
+            android:exported="false" />
+
+        <receiver android:name=".EndParsingReceiver" />
+        <receiver android:name=".BroadCAstReceiverDemarrage">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter> </receiver>
+
+        <activity android:name=".ListCarte" />
+        <activity android:name=".LienActivity" />
+        <activity android:name=".DownloadDataActivity" />
+        <activity android:name=".AjouterJeu" />
+        <activity android:name=".SuppJeu" />
+
+        <service
+            android:name=".UpdateService"
+            android:exported="false" />
+
+        <activity
+            android:name=".ListCarteNonConsulte"
+            android:label="@string/title_activity_list_carte_non_consulte"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <service
+            android:name=".ServiceRappelRevision"
+            android:enabled="true"
+            android:exported="true"></service>
+    </application>
+
+</manifest>

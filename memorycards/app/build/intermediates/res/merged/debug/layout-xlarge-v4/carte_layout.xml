@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/n1">
+
+    <TextView
+        android:text="Theme"
+        android:layout_width="97dp"
+        android:layout_height="match_parent"
+        android:id="@+id/theme"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/idcarte"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/diffcarte"
+        android:textSize="40dp"
+        android:text="2"
+        android:textColor="#FFFFFF"
+        />
+    <Spinner
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerddiff"
+        android:gravity="center"
+        android:dropDownWidth="126dp"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:dropDownSelector="@color/colorPrimary"
+        android:layout_gravity="start"/>
+
+    <TextView
+
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:id="@+id/chronometer4"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:text="30"
+        android:drawableLeft="@drawable/ic_schedule_white_18dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/n2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cercle"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:id="@+id/idcarte"
+            android:text="2"
+            android:textColor="#FFFFFF"
+
+            android:textSize="40dp"/>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"></RelativeLayout> <TextView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/textviewquest"
+            android:layout_gravity="top"
+            android:text="dsdvfgfdggfhfgfhfgjfhgjhgjfg"
+            android:textSize="40dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="#ffffff"
+            android:fontFamily="sans-serif-condensed" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/n3"
+        android:weightSum="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.50"
+            android:text="Valider"
+            android:id="@+id/valider"
+            android:textSize="15sp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_check_circle_white_18dp"/>
+        <Button
+            android:layout_width="117dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:text="Reponse"
+            android:id="@+id/editrep"
+
+            android:textSize="15sp"
+            android:drawableLeft="@drawable/ic_touch_app_white_18dp"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>

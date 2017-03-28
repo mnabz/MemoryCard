@@ -1,0 +1,140 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nautilius.memorycards.QuestionDialogFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:orientation="horizontal"
+            android:background="@color/n1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="left"
+                android:fontFamily="sans-serif"
+                android:text="theme"
+                android:id="@+id/themecarte"
+                android:textSize="30dp"
+    android:layout_weight="0.5"
+                android:textColor="#FFFFFF"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timercarte"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="30"
+                android:layout_weight="0.45"
+                android:drawableLeft="@drawable/ic_schedule_white_18dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/idcarte"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="right"
+                android:id="@+id/diffquestioncarte"
+                android:textSize="40dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:layout_weight="0.05"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="392dp"
+            android:background="@color/n2"
+            android:layout_weight="0.57">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="id carte"
+                android:textSize="25dp"
+
+                android:textColor="#FFFFFF"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cercle"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:id="@+id/idquestioncarte"
+                android:text="2"
+                android:textColor="#FFFFFF"
+
+                android:textSize="40dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="432dp"
+                android:id="@+id/questioncarte"
+                android:layout_gravity="top"
+                android:text="dsdvfgfdggfhfgfhfgjfhgjhgjfg"
+                android:textSize="40dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="top"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="#ffffff"
+                android:fontFamily="sans-serif-condensed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/n3"
+            android:weightSum="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/n1"
+                android:text="editer difficulte"
+                android:id="@+id/editercarte"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_check_circle_white_18dp"
+                android:layout_weight="0.50" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:text="valider"
+                android:id="@+id/validercarte"
+                android:textSize="15sp"
+                android:background="@color/n2"
+                android:drawableRight="@drawable/ic_check_circle_white_18dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

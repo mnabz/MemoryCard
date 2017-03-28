@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondecran">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/CarteData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_touch_app_white_18dp"        android:maxWidth="200dp"
+        android:width="3000dp"
+        android:text="Start Downloading my File"
+        android:paddingTop="15dp"/>
+
+    <Button
+        android:id="@+id/displayDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_touch_app_white_18dp"        android:maxWidth="200dp"
+        android:width="3000dp"
+        android:text="Display all Downloads"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/checkStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_touch_app_white_18dp"        android:maxWidth="200dp"
+        android:width="3000dp"
+        android:text="Check Status of Download"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/cancelDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_touch_app_white_18dp"        android:maxWidth="200dp"
+        android:width="3000dp"
+        android:text="Cancel the current Download"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FLASHCARDS</string>
+    <string name="liengeo">http://82.233.233.127:40316/share/PtferD56mQhdBTml/geo.xml</string>
+    <string name="liengeo1">http://52.36.158.94/cartes.xml</string>
+    <string name="liengeo3">https://drive.google.com/open?id=0B57Gr1Ar2lkuYmRxV1UwU1JaYzQ</string>
+    <string name="lienmaths">http://82.233.233.127:40316/share/0mfWEIDOf2YMKCQq/maths.xml</string>
+
+
+    <!-- valeujrs du spinner -->
+    <string-array name="difficulte">
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_list_carte_non_consulte">ListCarteNonConsulte</string>
+
+
+</resources>

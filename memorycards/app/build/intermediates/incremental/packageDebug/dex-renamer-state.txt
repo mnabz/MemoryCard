@@ -1,0 +1,7 @@
+#Sat Mar 11 14:50:40 CET 2017
+base.0=/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_493048e936d9b9cb2edf344f36fe27b91cac21c1
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_98a5cf332334bc0d7cf2d735a20ae0042a1fd309/classes.dex
+base.1=/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_98a5cf332334bc0d7cf2d735a20ae0042a1fd309
+file.0=/home/nabil/Bureau/projetandroid/memorycards/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_493048e936d9b9cb2edf344f36fe27b91cac21c1/classes.dex
